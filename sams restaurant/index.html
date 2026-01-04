@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sam's Bistro</title>
+
+  
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --brand: #2b4a3f;
+      --accent: #d9a441;
+    }
+    .brand-text { color: var(--brand); }
+    .btn-accent {
+      background: var(--accent);
+      color: #1a1a1a;
+      border: none;
+    }
+    .btn-accent:hover { background: #c59131; color: #111; }
+    .hero {
+      background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('https://images.unsplash.com/photo-1543353071-873f17a7a5d4?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+      color: #fff;
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+    }
+    .menu-card img { height: 160px; object-fit: cover; }
+    .section-title {
+      font-weight: 700; letter-spacing: .5px;
+    }
+    .badge-new { background: var(--accent); }
+    .footer a { color: inherit; text-decoration: none; }
+  </style>
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg bg-light border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold brand-text" href="#">Sam's Bistro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reserve">Reservations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <section class="hero">
+    <div class="container">
+      <div class="col-12 col-lg-8">
+        <span class="badge badge-new rounded-pill mb-3 px-3 py-2">New seasonal menu</span>
+        <h1 class="display-5 fw-bold">Taste the heart of Kampala</h1>
+        <p class="lead mb-4">Fresh ingredients, warm hospitality, and flavors inspired by the forest and rivers.</p>
+        <div class="d-flex gap-2">
+          <a href="#menu" class="btn btn-accent px-4">Explore menu</a>
+          <a href="#reserve" class="btn btn-outline-light px-4">Book a table</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <h2 class="section-title brand-text">About us</h2>
+          <p>We blend local produce with modern techniques, celebrating Ugandan and african cuisine with a contemporary twist.</p>
+          <p>Our team is committed to sustainability, community, and unforgettable dining experiences.</p>
+        </div>
+        <div class="col-md-6">
+          <div class="ratio ratio-16x9 rounded overflow-hidden">
+            <iframe src="https://youtu.be/cbAB30SuA3Q" title="Restaurant intro" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="menu" class="py-5 bg-light">
+    <div class="container">
+      <div class="d-flex align-items-end justify-content-between mb-3">
+        <h2 class="section-title brand-text">Menu highlights</h2>
+        <a class="btn btn-link" href="#">View full menu</a>
+      </div>
+      <div class="row g-4">
+        
+        <div class="col-sm-6 col-lg-4">
+          <div class="card menu-card h-100 shadow-sm">
+            <img src="https://images.pexels.com/photos/19239119/pexels-photo-19239119.jpeg" class="card-img-top" alt="Grilled tilapia" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title">Grilled Tilapia</h5>
+                <span class="fw-bold brand-text">$12</span>
+              </div>
+              <p class="card-text">Charred, lemon-herb butter, cassava chips.</p>
+              <span class="badge text-bg-success">Gluten-free</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-lg-4">
+          <div class="card menu-card h-100 shadow-sm">
+            <img src="https://media.istockphoto.com/id/2220266348/photo/delicious-stir-fried-mushrooms-with-herbs-and-side-of-plantains.jpg?b=1&s=612x612&w=0&k=20&c=6joIThJdX4NM_W_eG0b-NAWDMW233cbAElGvKvdVWXY=" class="card-img-top" alt="Forest mushroom stew" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title">Forest Mushroom Stew</h5>
+                <span class="fw-bold brand-text">$10</span>
+              </div>
+              <p class="card-text">Wild mushrooms, plantain, aromatic spices.</p>
+              <span class="badge text-bg-warning">Vegetarian</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-lg-4">
+          <div class="card menu-card h-100 shadow-sm">
+            <img src="https://images.pexels.com/photos/30766460/pexels-photo-30766460.jpeg" class="card-img-top" alt="Spiced goat skewers" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title">Spiced Goat Skewers</h5>
+                <span class="fw-bold brand-text">$14</span>
+              </div>
+              <p class="card-text">Smoky, marinated with pili-pili, lime.</p>
+              <span class="badge text-bg-primary">Chef's special</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h2 class="section-title brand-text mb-3">Gallery</h2>
+      <div class="row g-3">
+        <div class="col-6 col-lg-3">
+          <img class="img-fluid rounded" src="https://images.pexels.com/photos/2649771/pexels-photo-2649771.jpeg" alt="Dining room">
+        </div>
+        <div class="col-6 col-lg-3">
+          <img class="img-fluid rounded" src="https://images.pexels.com/photos/6126975/pexels-photo-6126975.jpeg" alt="Chef plating">
+        </div>
+        <div class="col-6 col-lg-3">
+          <img class="img-fluid rounded p-4" src="https://images.pexels.com/photos/7266008/pexels-photo-7266008.jpeg" alt="Bar scene">
+        </div>
+        <div class="col-6 col-lg-3">
+          <img class="img-fluid rounded" src="https://media.istockphoto.com/id/916575452/photo/close-up-of-freshly-baked-cakes-and-cupcakes-in-a-row-at-food-market.jpg?b=1&s=612x612&w=0&k=20&c=msOfX-6wibmVaBkcSKYyUBLolNQkWs1Wson1GyZOHzQ=" alt="Dessert">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="reserve" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title brand-text mb-3">Reservations</h2>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <form class="card shadow-sm p-3">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" placeholder="Your name" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Phone</label>
+                <input type="tel" class="form-control" placeholder="+243..." required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Date</label>
+                <input type="date" class="form-control" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Time</label>
+                <input type="time" class="form-control" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Guests</label>
+                <select class="form-select">
+                  <option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Notes</label>
+                <textarea class="form-control" rows="3" placeholder="Allergies, special requests"></textarea>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <button type="submit" class="btn btn-accent">Request booking</button>
+              <small class="text-muted">We’ll confirm by phone or SMS.</small>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-4 bg-white border rounded h-100">
+            <h5 class="fw-semibold">Opening hours</h5>
+            <ul class="list-unstyled mb-3">
+              <li>Mon–Fri: 11:30–22:00</li>
+              <li>Sat: 12:00–23:00</li>
+              <li>Sun: 12:00–21:00</li>
+            </ul>
+            <h5 class="fw-semibold">Location</h5>
+            <p>Kampala, Uganda — Makindye Road,oposite vox lounge</p>
+            <div class="ratio ratio-4x3 rounded overflow-hidden">
+              <iframe
+                src="https://www.bing.com/ck/a?!&&p=7b49f857fedac44dd9f06767657d421a9213d88097eb69b2c38a5c3eaed4f6abJmltdHM9MTc2NTA2NTYwMA&ptn=3&ver=2&hsh=4&fclid=154380c2-7e81-636c-000c-96ad7f0362b9&u=a1aHR0cHM6Ly93d3cuYmluZy5jb20vbWFwcz9xPU1ha2luZHllJnNhdGlkPWlkLnNpZCUzQWMxMmRmZDUyLTY2YzEtZmU1MS1lNjYzLTVjM2RmNmZmNjU3MSZGT1JNPUtDMk1BUA"
+                title="Map"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer id="contact" class="footer py-4 border-top">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <p class="mb-0">© <span id="year"></span>Sam's Bistro</p>
+      <div class="d-flex gap-3">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
